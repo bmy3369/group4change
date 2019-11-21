@@ -6,7 +6,7 @@
         <style>
             body {background-image: linear-gradient(180deg, white, gray);
                   margin: 0;
-          }
+            }
             ul {
                 list-style-type: none;
                 margin: 0;
@@ -33,6 +33,15 @@
             .active {
                 background-color: #0066ff;
             }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse
+            }
+            th, td {
+                padding: 28px;
+                font-size: 37px;
+                text-align: left;
+            }
         </style>
     </head>
     <nav>
@@ -45,7 +54,28 @@
     </nav>
     <body>
         <div style="padding:20px;margin-top:20px; height:1500px;">
-            <h1>Page for viewing initiative</h1>
+            <table style="width:100%">
+                <tr>
+                    <h1>Event:</h1>
+                    <th>Clean RIT</th>
+                </tr>
+                <tr>
+                    <h1>Location:</h1>
+                    <th>Gleason Circle</th>
+                </tr>
+                <tr>
+                    <h1>Date and Time:</h1>
+                    <th>November 17, 2019</th>
+                </tr>
+                <tr>
+                    <h1>Description:</h1>
+                    <th>An event for students to participate in a campus wide cleanup</th>
+                </tr>
+                <tr>
+                    <h1>Images:</h1>
+                    <img src="Desktop/ritlogo-web.jpg" alt="Simply Easy Learning" width="200"height="80">
+                </tr>        
+            </table>
         </div>
     </body>
 </html>
