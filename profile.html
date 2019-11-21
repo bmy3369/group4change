@@ -3,13 +3,90 @@
     <head>
         <meta charset="utf-8">
         <title>Profile</title>
+    <style>
+        body {background-image: linear-gradient(180deg, white, gray);
+              margin: 0;
+        }
+                  
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 36px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color:#111;
+        }
+        .active {
+            background-color: #0066ff;
+        }
+        article {
+            float: right;
+            padding: 20px;
+            width: 65%;
+        }
+        .active{
+            background-color: #0066ff;
+        }
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse
+        }
+        th, td{
+            padding: 28px;
+            font-size: 37px;
+            text-align: center;
+        }
+        p{
+            font-size: 20;
+        }
+    </style>
     </head>
-    <body>
+        <nav>
+        <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="create.html" title="Create Initiative">Create Initiative</a></li>
+                <li><a href="about.html" title="About">About</a></li>
+                <li><a class="active" href="#profile" title="Profile">Profile</a></li>
+            </ul>
+        </nav>
+        <body>
+        <div style="padding:20px;margin-top:20px; height:800px;">
             <h1>Profile</h1>
-        <p><img src="profilePic.jpeg" alt="Profile Picture" width="300" height="400" class="flowLeft"></p>
+        <p><img src="profilePic.jpeg" alt="Profile Picture" style="float:left;width:200px;height:300px;"></p>
+            <table>
+                <tr>
+                <th colspan="3">My Initiatives</th>
+                </tr>
+                <tr>
+                    <td>Clean RIT</td>
+                    <td>Not Started</td>
+                    <td><a href="edit.html" title="Edit">EDIT</a></td>
+                </tr>
+                <tr>
+                    <td>ROAR Day</td>
+                    <td>Completed</td>
+                    <td><a href="view.html" title="View">VIEW</a></td>
+                </tr>
+                </table>
     <p><b>Name:</b> John Smith<br>
         <b>Karma:</b> 200<br>
         <b>Attended:</b> 20<br>
         <b>Created:</b> 2</p>
+        </div>
     </body>
 </html>
