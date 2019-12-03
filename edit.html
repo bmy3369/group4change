@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>View Initiative</title>
+        <title>Edit Initiative</title>
         <style>
             body {background-image: linear-gradient(180deg, white, gray);
                   margin: 0;
@@ -46,10 +47,10 @@
     </head>
     <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Another_test_run.html">Create Iniative</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="profile.html">Profile</a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="Another_test_run.html" title="Create Initiative">Create Iniative</a></li>
+                <li><a href="about.html" title="About">About</a></li>
+                <li><a href="profile.html" title="Profile">Profile</a></li>
             </ul>
     </nav>
     <body>
@@ -57,19 +58,19 @@
             <table style="width:100%">
                 <tr>
                     <th>Event:</th>
-                    <th>ROAR Day</th>
+                    <th><textarea name="Event" rows="3" cols="75">Clean RIT</textarea></th>
                 </tr>
                 <tr>
                     <th>Location:</th>
-                    <th>SAU</th>
+                    <th><textarea name="Location" rows="3" cols="75">Gleason Circle</textarea></th>
                 </tr>
                 <tr>
                     <th>Date and Time:</th>
-                    <th>November 17, 2019</th>
+                    <th><textarea name="Date and Time" rows="3" cols="75">November 17, 2019</textarea></th>
                 </tr>
                 <tr>
                     <th>Description:</th>
-                    <th>An event for students, alumni, and the community to help raise money for RIT</th>
+                    <th><textarea name="Description" rows="3" cols="75">An event for students to help clean up RIT</textarea></th>
                 </tr>
                 <tr>
                     <th>Images:</th>
@@ -77,12 +78,12 @@
                 </tr>        
             </table>
             <p style="text-align:center">
-                <a href="join.html">
-                    <button style="width:16%; height:100px; font-size: 37px">
-                    Join Initiative
-                    </button>
-                </a>
-            </p>
+		<a href="edited_view.html">
+			<button style="width:20%; height:100px; font-size: 37px">
+			Confirm Edits
+			</button>
+		</a>
+	</p>
         </div>
     </body>
 </html>
